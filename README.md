@@ -1,5 +1,5 @@
 # Proyecto integrador:
-Lenguaje: Python.
+Lenguaje: Python.\
 Nivel: inicial.
 
 # Batalla Naval.
