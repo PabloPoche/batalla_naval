@@ -8,12 +8,12 @@ El juego consiste en adivinar la posicion de un barco en la menor cantidad de in
 
 # Entrada del sistema.
 El programa solicitara al jugador que ingrese las coordenadas(fila y columna) donde este supone que se encuentra el barco.
-En caso de acertar las mismas se lo felicitara y se le pedira ingrese su nombre al Ranking de jugadores, caso contrario se le pedira que ingrese nuevas coordenadas.
+En caso de acertar las mismas se lo felicitara y se le pedira ingrese su nombre al Ranking de jugadores, caso contrario se le pedira que ingrese nuevas coordenadas.\
 -Mediante la opcion R en menu principal se puede acceder a la visualizacion del Ranking de jugadores.
 
 # Salida del sistema.
 Cuando el jugador adivina la ubicacion del barco finalizara la partida y se le solicitara que ingrese su nombre.
-El nombre y cantidad de intentos seran ingresados al Ranking de jugadores y guardados en el archivo [ranking.csv]
+El nombre y cantidad de intentos seran ingresados al Ranking de jugadores y guardados en el archivo [ranking.csv].\
 -Mediante la opcion S en menu principal se puede salir del programa.
 
 # Notas
