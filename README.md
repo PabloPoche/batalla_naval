@@ -1,5 +1,5 @@
-Pytho nivel inicial
-Proyecto integrador
+# Pytho nivel inicial.\
+# Proyecto integrador:
 
 # Batalla Naval.
 El juego consiste en adivinar la posicion de un barco en la menor cantidad de intentos, la ubicacion del mismo es determinada aleatoriamente en cada partida
