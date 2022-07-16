@@ -1,5 +1,5 @@
-Proyecto integrador\
-Nivel: Inicial\
+Pytho nivel inicial
+Proyecto integrador
 
 # Batalla Naval.
 El juego consiste en adivinar la posicion de un barco en la menor cantidad de intentos, la ubicacion del mismo es determinada aleatoriamente en cada partida
@@ -15,6 +15,6 @@ Cuando el jugador adivina la ubicacion del barco finalizara la partida y se le s
 El nombre y cantidad de intentos seran ingresados al Ranking de jugadores y guardados en el archivo [ranking.csv].\
 -Mediante la opcion S en menu principal se puede salir del programa.
 
-# Nota
+# Nota.
 En este proyecto esta orientado a integrar en un programa los conocimientos adquiridos durante el cursado del nivel inicial(Modulos 1 al 6).
 
