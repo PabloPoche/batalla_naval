@@ -18,5 +18,5 @@ El nombre y cantidad de intentos seran ingresados al Ranking de jugadores y guar
 -Mediante la opcion S en menu principal se puede salir del programa.
 
 # Nota.
-En este proyecto esta orientado a integrar en un programa los conocimientos adquiridos durante el cursado del nivel inicial(Modulos 1 al 6).
+En este proyecto esta orientado a integrar en un programa los conocimientos adquiridos durante el cursado del nivel inicial(Modulos 1 al 7).
 
