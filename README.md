@@ -1,3 +1,5 @@
+![Juego banner](/batalla_naval.jpg)
+
 # Proyecto integrador:
 Lenguaje: Python.\
 Nivel: inicial.
