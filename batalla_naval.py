@@ -2,7 +2,11 @@
 # Proyecto nivel inicial
 
 # Autor: Pablo Pochettino
-# Version: 1.0
+# Version: 1.0 (20/07/2022)
+#
+# Revision 2.0 (24/07/2022)
+# Se importan las funciones propias desde un archivo externo (funciones.py)
+#
 # -------------------- Juego de Batalla Naval --------------------------------
 # El tablero de juego consiste en una cuadricula de 4filas x 4columnas y
 # las coordenadas del barco se generaran aleatoriamente en cada partida.
@@ -14,7 +18,7 @@
 # -------------- Librerias ------------------
 import os
 
-# -------------- Funciones ------------------
+# -------------- Funciones propias ------------------
 import funciones as f   # Importo mis funciones
 
 

@@ -1,4 +1,4 @@
-# -------------- Mis Funciones ------------------
+# -------------- Funciones propias ------------------
 # -Genera las coordenadas aleatorias del barco 
 # -Ingreso de las coordenadas(Fila y Columna) del jugador
 # -Lectura del archivo ranking.csv
