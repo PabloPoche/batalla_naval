@@ -12,59 +12,12 @@
 # se displayara "AGUA" y se le pedira ingresar nuevas coordenadas.
 
 # -------------- Librerias ------------------
-import random
-import csv
 import os
 
 # -------------- Funciones ------------------
-
-# Genera las coordenadas aleatorias del barco 
-def gen_coord_barco ():
-    fila_b = chr(random.randint(65,68))
-    columna_b = str(random.randint(0,3))
-    coord_barco = fila_b  + columna_b
-    return(coord_barco)
-
-# Ingreso de las coordenadas(Fila y Columna) del jugador
-def in_coord_jugador ():
-    print("            Ingrese coordenadas ")
-    print("                Fila[A a D]: ", end= "")
-    while True:
-        fila_j = str(input()).upper()
-        if fila_j >= "A" and fila_j <= "D" : 
-            break
-        else:
-            print("Coordenada invalida!")
-            print("Typee una letra entre A y D: ", end= "")
-    print("             Columna[0 a 3]: ", end= "")
-    while True:
-        columna_j = str(input())
-        if columna_j >= "0" and columna_j <= "3" : 
-            break
-        else:
-            print("Coordenada invalida!")
-            print("Typee un numero entre 0 y 3: ", end= "")
-    coord_jugador = fila_j + columna_j
-    return(coord_jugador)
-
-# Lectura del archivo ranking.csv
-def read_csv():
-    csvfile = open("ranking.csv")
-    ranking = list(csv.DictReader(csvfile))
-    csvfile.close()
-    return(ranking)
-
-# Escritura del archivo ranking.csv
-def write_csv(jugador, intentos):
-    csvfile = open("ranking.csv", "a", newline="")
-    header = ["Jugador", "Puesto"]
-    writer = csv.DictWriter(csvfile, fieldnames=header)
-    writer.writerow({"Jugador": jugador , "Puesto": intentos})
-    csvfile.close()
-    return()
+import funciones as f   # Importo mis funciones
 
 
-# --------------------------------
 # -----Comienzo del programa-----
 
 if __name__ == '__main__':
@@ -97,11 +50,11 @@ if __name__ == '__main__':
          # Inicio del juego  
         if opcion == "J" :
             intentos = 1
-            coord_barco = gen_coord_barco ()
-            # print(coord_barco) ....linea usada para testear el programa
+            coord_barco = f.gen_coord_barco ()    # Genera las coordenadas aleatorias del barco 
+            # print(coord_barco) # ....linea usada para testear el programa
             while True:
                 print("Intento N:",intentos )
-                coord_jugador = in_coord_jugador ()   
+                coord_jugador = f.in_coord_jugador () # Ingreso de las coordenadas(Fila y Columna) del jugador
                 # Compara las coord. aleatorias del barco con las coord. ingresadas por el jugador
                 if coord_jugador == coord_barco :
                     print("")
@@ -110,7 +63,7 @@ if __name__ == '__main__':
                     print("")
                     jugador = str(input("Ingrese su nombre al Ranking de jugadores: "))
                     # Agrega jugador e intentos a ranking.csv
-                    write_csv(jugador, intentos)
+                    f.write_csv(jugador, intentos)    # Escritura del archivo ranking.csv
                     break
                 else:
                     print("")
@@ -126,7 +79,7 @@ if __name__ == '__main__':
             print("")
             
             # Recupera ranking de archivo ranking.csv
-            ranking = read_csv()
+            ranking = f.read_csv()    # Lectura del archivo ranking.csv
             
             # Busca en el ranking el numero maximo de intentos(puesto)
             max_intento = 0
